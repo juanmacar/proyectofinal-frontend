@@ -1,0 +1,25 @@
+/*Estilo del iframe de Google*/
+.content_iframegoogle--decoration {
+    border: 2px solid $secundario;
+    width: 100%;
+    min-height: 100%;
+}
+/*Altura de la primera sección, que tiene el mapa y el título*/
+.content_firstblock--height {
+    min-height: 500px;
+}
+/*Estilo del titular junto al mapa de Google*/
+.content_titular--estilo {
+    font-size: 7em;
+    word-wrap: break-word;
+    line-height: 1.1;
+    margin: auto;
+    color: $secundario;
+}
+/*estilo de las cajas que contienen el texto*/
+.content_questions--divdecoration {
+    background-color: $principal;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px 10px 5px 15px;
+}

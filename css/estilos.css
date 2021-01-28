@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/*reseteo de CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*colores globales*/
+/*importacion de estilos SASS*/
+/* Alinear los botones a la izquierda achicando su contenedor*/
+.header_navbar--widthauto {
+  width: auto;
+}
+
+/*Hacer que la barra de navegación sea Sticky*/
+.header_navbar--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 80px;
+}
+
+/*Estilo de la barra de navegación*/
+.header_navbar--estilo {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  height: auto;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav .header_navbar--hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav .header_navbar--hover:hover {
+  color: #F5BC32;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: 700;
+  background-color: white;
+}
+
+/*imagenes de fondo del carrusel*/
+.image1 {
+  background-image: url("../images/cocina.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.image2 {
+  background-image: url("../images/dormitorio.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.image3 {
+  background-image: url("../images/front.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.image4 {
+  background-image: url("../images/living.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*Estilo del iframe de Google*/
+.content_iframegoogle--decoration {
+  border: 2px solid #F5BC32;
+  width: 100%;
+  min-height: 100%;
+}
+
+/*Altura de la primera sección, que tiene el mapa y el título*/
+.content_firstblock--height {
+  min-height: 500px;
+}
+
+/*Estilo del titular junto al mapa de Google*/
+.content_titular--estilo {
+  font-size: 7em;
+  word-wrap: break-word;
+  line-height: 1.1;
+  margin: auto;
+  color: #F5BC32;
+}
+
+/*estilo de las cajas que contienen el texto*/
+.content_questions--divdecoration {
+  background-color: #EEDE03;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 10px 10px 5px 15px;
+}
+
+.timeline {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/*Estilos de la linea*/
+.linea {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(to right, #EEDE03 0%, #F5BC32 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#EEDE03), to(#F5BC32));
+     border-image: linear-gradient(to right, #EEDE03 0%, #F5BC32 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: auto;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: #34435E;
+  /*Estilos de los números*/
+}
+
+.linea:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  line-height: 2em;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: #F5BC32;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+/*Borde de los casilleros con numeros impares*/
+.linea:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.linea:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+/*Borde de los casilleros con numeros pares*/
+.linea:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+.linea:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+.linea:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.linea:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*estilo de las etiquetas de completado o pendiente*/
+.content_timeline--estilocompletado {
+  color: green;
+  font-weight: 600;
+}
+
+.content_timeline--estilopendiente {
+  color: #F5BC32;
+  font-weight: 600;
+}
+
+/* COMIENZA LA ANIMACION */
+.content_questions--animacion0, .content_questions--animacion1, .content_questions--animacion2, .content_questions--animacion3 {
+  opacity: 0;
+  -webkit-animation-name: fade_in;
+          animation-name: fade_in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content_questions--animacion0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.content_questions--animacion1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.content_questions--animacion2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.content_questions--animacion3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+/*Estilo de los botones del sitio*/
+.general--botones {
+  border-radius: 20px;
+  border: solid 1px;
+  border-color: #A4243B;
+  background-color: #A4243B;
+  color: #CED0CE;
+  padding: 5px 15px;
+}
+
+/* padding para el contenido de las secciones que lo necesitan*/
+.seccion--padding {
+  padding: 2em;
+}
+
+/*padding de titulos de secciones*/
+.content_title--padding {
+  padding-bottom: 10px;
+}
+
+/*estilo del footer*/
+footer {
+  background-color: #3F403F;
+  color: #CED0CE;
+}
+
+/*posicion del carrusel al inicio de la página*/
+/*esto me gustaría poder resolverlo sin tener que especificar los pixeles, pero de momento no pude*/
+.content_afternavbar--position {
+  position: relative;
+  top: -80px;
+}
+
+/* Centrar el texto de un div*/
+.div_text--center {
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */

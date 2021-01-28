@@ -1,0 +1,17 @@
+/* COMIENZA LA ANIMACION */
+.content_questions--animacion0, .content_questions--animacion1, .content_questions--animacion2, .content_questions--animacion3 {
+	opacity: 0;
+	animation-name: fade_in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+}
+@keyframes fade_in {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@for $var from 0 through 3 {
+	.content_questions--animacion#{$var} {
+		animation-delay: #{$var}s;
+	}
+}

@@ -1,0 +1,54 @@
+/*reseteo de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/*colores globales*/
+$principal: #EEDE03;
+$secundario: #F5BC32;
+$acento: #A4243B;
+$neutroclaro: #CED0CE;
+$neutrooscuro: #3F403F;
+
+/*importacion de estilos SASS*/
+@import "navbar";
+@import "_imagenes-carrusel-home";
+@import "ubicacion";
+@import "timeline";
+@import "animaciones_ubicacion";
+
+/*Estilo de los botones del sitio*/
+
+.general--botones {
+    border-radius: 20px;
+    border: solid 1px;
+    border-color: $acento;
+    background-color: $acento;
+    color: $neutroclaro;
+    padding: 5px 15px;
+}
+
+/* padding para el contenido de las secciones que lo necesitan*/
+.seccion--padding {
+    padding: 2em;
+}
+/*padding de titulos de secciones*/
+.content_title--padding {
+    padding-bottom: 10px;
+}
+/*estilo del footer*/
+footer {
+    background-color: $neutrooscuro;
+    color: $neutroclaro;
+}
+/*posicion del carrusel al inicio de la página*/
+/*esto me gustaría poder resolverlo sin tener que especificar los pixeles, pero de momento no pude*/
+.content_afternavbar--position {
+    position: relative;
+    top: -80px;
+}
+/* Centrar el texto de un div*/
+.div_text--center {
+    text-align: center;
+}

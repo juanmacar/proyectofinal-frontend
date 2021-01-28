@@ -1,0 +1,78 @@
+$black: #34435E;
+$white: #ffffff;
+
+
+.timeline {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+/*Estilos de la linea*/
+.linea {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, $principal 0%,$secundario 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: auto;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: $black;
+  
+/*Estilos de los números*/
+  &:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    line-height: 2em;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background-color: $secundario;
+    text-align: center;
+    margin: auto;
+    color: $white;
+    font-size: 1em;
+  }
+}
+/*Borde de los casilleros con numeros impares*/
+.linea:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+  
+  &:before {
+    left: 100%; 
+    margin-left: -20px;
+  }
+}
+/*Borde de los casilleros con numeros pares*/
+.linea:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+  
+  &:before {
+    right: 100%; 
+    margin-right: -20px;
+  }
+}
+//handle first and last
+.linea:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+.linea:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+/*estilo de las etiquetas de completado o pendiente*/
+.content_timeline--estilocompletado {
+  color: green;
+  font-weight: 600;
+}
+.content_timeline--estilopendiente {
+  color: $secundario;
+  font-weight: 600;
+}

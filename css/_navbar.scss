@@ -1,0 +1,26 @@
+/* Alinear los botones a la izquierda achicando su contenedor*/
+.header_navbar--widthauto {
+    width:auto;
+}
+/*Hacer que la barra de navegación sea Sticky*/
+.header_navbar--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 80px;
+}
+/*Estilo de la barra de navegación*/
+.header_navbar--estilo {
+    background-color: rgba($color: #fff, $alpha: 0.8) !important;
+    height: auto;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .header_navbar--hover {
+    transition: 0.2s;
+    font-weight: 600;
+    &:hover {
+        color: $secundario;
+        transform: scale(1.1);
+        font-weight: 700;
+        background-color: white;
+    }
+}

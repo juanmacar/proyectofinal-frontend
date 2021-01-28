@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Construcción de casas y duplex en Córdoba con calidad superior, pensados para vivir, no para vender.">
+    <meta name="keywords" content="duplex en córdoba, duplex, construcción, constructora, docta, casas, primera casa, vivienda, contacto duplex docta, telefono duplex docta, email duplex docta">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Avance - Duplex Docta</title>
+</head>
+<body>
+    <!-- EMPIEZA LA BARRA DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header_navbar--sticky header_navbar--estilo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo_horizontal.svg" alt="Logo de Duplex Docta" width="200px" height="38px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header_navbar--widthauto" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link header_navbar--hover" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link header_navbar--hover" href="renders.html">Renders</a>
+                    <a class="nav-link header_navbar--hover" href="ubicacion.html">Ubicación</a>
+                    <a class="nav-link header_navbar--hover" href="avance.html">Avance</a>
+                    <a class="nav-link active header_navbar--hover" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN DE LA BARRA DE NAVEGACIÓN-->
+    <!-- EMPIEZA EL TEXTO SUPERIOR-->
+    <section>
+        <h1>¡Charlemos!</h1>
+        <P>Queremos ayudarte a decidir si este duplex es la vivienda correcta para vos</P>
+        </section>
+    <!-- FIN DEL TEXTO SUPERIOR-->
+    <!-- EMPIEZA EL FORMULARIO-->
+        <section>
+            <h2>Dejanos tus datos y nosotros te llamamos</h2>
+            <form action="envio.php" method="POST">
+                <label for="nombre">Tu nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" value="Nombre"><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" value="Apellido"><br>
+                <label for="celular">Celular:</label><br>
+                <input type="text" id="celular" name="celular" value="351..."><br>
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email" name="email" value="nombre@gmail.com"><br>
+                <label for="horario">Horario de contacto:</label><br>
+                <select name="rangohorario" id="horario">
+                    <option value="manana">Mañana</option>
+                    <option value="siesta">Siesta</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select><br>
+                <label for="consentimiento"> Acepto que me llamen por teléfono</label>
+                <input type="checkbox" id="consentimiento" name="consentimiento" value="Si"><br>
+                <input type="submit" value="Submit" class="submitform">
+                <input type="reset" value="Borrar datos" class="submitform">
+            </form>
+        </section>
+        <!-- FIN DEL FORMULARIO-->
+    <!-- EMPIEZA EL FOOTER-->
+<footer class="seccion--padding div_text--center">
+    Desarrollado por Juan Macarlupu. Todos los derechos reservados.
+</footer>
+<!-- FIN DEL FOOTER-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>
