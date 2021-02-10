@@ -282,4 +282,53 @@ footer {
 .div_text--center {
   text-align: center;
 }
+
+.cabecera_cuerpo_padding {
+  padding: 20px;
+}
+
+/*estilo del header de la sección de contacto*/
+.secciones-header-titular {
+  background-image: url("../images/living.jpg");
+  height: 25vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.secciones-header-titular {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30px;
+}
+
+.secciones-header-shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*Estilo de ancho 100% de botones de formulario de contacto*/
+.contacto-form-button {
+  width: 100%;
+}
+
+/*Estilo de color de boton de envio de formulario de contacto*/
+.contacto-form-button-color {
+  background-color: #EEDE03;
+  border: none;
+}
+
+.contacto-form-button-color:hover {
+  background-color: #bbae00;
+  border: none;
+}
 /*# sourceMappingURL=estilos.css.map */
