@@ -1,3 +1,9 @@
+/*¡HOLA, CRISTIAN!
+Sabía que ibas a venir a chusmear que hay acá, así que te dejé el código lo mejor comentado posible.
+También trate de usar BEM, lo mejor que pude como yo lo entendí.
+Espero que te guste el sitio.
+¡Abrazo!*/
+
 /*reseteo de CSS*/
 * {
     margin: 0;
@@ -7,7 +13,6 @@
 /*colores globales*/
 $principal: #EEDE03;
 $secundario: #F5BC32;
-$acento: #A4243B;
 $neutroclaro: #CED0CE;
 $neutrooscuro: #3F403F;
 
@@ -17,17 +22,12 @@ $neutrooscuro: #3F403F;
 @import "ubicacion";
 @import "timeline";
 @import "animaciones_ubicacion";
+@import "contact_form";
+@import "home";
+@import "titulares_secciones";
+@import "footer";
 
-/*Estilo de los botones del sitio*/
-
-.general--botones {
-    border-radius: 20px;
-    border: solid 1px;
-    border-color: $acento;
-    background-color: $acento;
-    color: $neutroclaro;
-    padding: 5px 15px;
-}
+/*ALGUNOS POSICIONAMIENTOS ÚTILES EN TODO EL SITIO*/
 
 /* padding para el contenido de las secciones que lo necesitan*/
 .seccion--padding {
@@ -37,58 +37,8 @@ $neutrooscuro: #3F403F;
 .content_title--padding {
     padding-bottom: 10px;
 }
-/*estilo del footer*/
-footer {
-    background-color: $neutrooscuro;
-    color: $neutroclaro;
-}
-/*posicion del carrusel al inicio de la página*/
-/*esto me gustaría poder resolverlo sin tener que especificar los pixeles, pero de momento no pude*/
-.content_afternavbar--position {
-    position: relative;
-    top: -80px;
-}
+
 /* Centrar el texto de un div*/
 .div_text--center {
     text-align: center;
-}
-.cabecera_cuerpo_padding  {
-    padding: 20px;
-}
-/*estilo del header de la sección de contacto*/
-    .secciones-header-titular {
-        background-image: url("../images/living.jpg");
-        height: 25vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-        /* Position text in the middle of the page/image */
-    .secciones-header-titular {
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-        color: white;
-        font-weight: bold;
-        border: 3px solid #f1f1f1;
-        z-index: 2;
-        width: 100%;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 30px;
-    }
-    .secciones-header-shadow {
-        text-shadow: 2px 2px 4px #000000;
-    }
-/*Estilo de ancho 100% de botones de formulario de contacto*/
-.contacto-form-button {
-    width: 100%;
-}
-/*Estilo de color de boton de envio de formulario de contacto*/
-.contacto-form-button-color {
-    background-color: #EEDE03;
-    border: none;
-}
-.contacto-form-button-color:hover {
-    background-color: #bbae00;
-    border: none;
 }

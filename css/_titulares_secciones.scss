@@ -1,0 +1,24 @@
+/*Asignación de imagen de fondo al titular*/
+.secciones-header-titular {
+    background-image: url("../images/fondo_cabecera.jpg");
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Estilos del texto de los titulares */
+.secciones-header-titular {
+    background-color: rgb(0,0,0); /* Color si no se ve la imagen */
+    color: $secundario;
+    font-weight: bold;
+    z-index: 2;
+    width: 100%;
+    padding-top: 30px;
+    h3 {
+        color: white;
+    }
+}
+.secciones-header-shadow {
+    text-shadow: 1px 1px $neutrooscuro, 4px 4px 3px $neutrooscuro;
+    filter: blur(0px);
+}

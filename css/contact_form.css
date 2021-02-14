@@ -1,0 +1,16 @@
+/*Estilo de ancho 100% de botones de formulario de contacto*/
+.contacto-form-button {
+  width: 100%;
+}
+
+/*Estilo de color de boton de envio de formulario de contacto*/
+.contacto-form-button-color {
+  background-color: #EEDE03;
+  border: none;
+}
+
+.contacto-form-button-color:hover {
+  background-color: #bbae00;
+  border: none;
+}
+/*# sourceMappingURL=contact_form.css.map */
