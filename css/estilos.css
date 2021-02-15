@@ -257,6 +257,46 @@ Espero que te guste el sitio.
           animation-delay: 3s;
 }
 
+.animacion-fade-slide-in {
+  opacity: 0;
+  /*para que no esten visibles hasta que llegue su hora de aparecer*/
+  -webkit-animation-name: fade_slide_in;
+          animation-name: fade_slide_in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  /*para que no haga loop*/
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fade_slide_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 75px);
+            transform: translate(0px, 75px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fade_slide_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 75px);
+            transform: translate(0px, 75px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
 /*Estilo de ancho 100% de botones de formulario de contacto*/
 .contacto-form-button {
   width: 100%;

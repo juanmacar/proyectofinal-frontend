@@ -1,0 +1,17 @@
+.animacion-fade-slide-in {
+    opacity: 0; /*para que no esten visibles hasta que llegue su hora de aparecer*/
+	animation-name: fade_slide_in;
+	animation-iteration-count: 1; /*para que no haga loop*/
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+@keyframes fade_slide_in {
+	0% {
+        opacity: 0;
+        transform: translate(0px, 75px);
+    }
+	100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}

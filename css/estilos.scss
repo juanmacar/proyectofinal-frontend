@@ -18,10 +18,11 @@ $neutrooscuro: #3F403F;
 
 /*importacion de estilos SASS*/
 @import "navbar";
-@import "_imagenes-carrusel-home";
+@import "imagenes-carrusel-home";
 @import "ubicacion";
 @import "timeline";
 @import "animaciones_ubicacion";
+@import "fade_slide_in";
 @import "contacto";
 @import "home";
 @import "titulares_secciones";
