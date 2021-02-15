@@ -40,46 +40,80 @@
     </section>
     <!-- FIN DEL TEXTO SUPERIOR-->
     <!-- EMPIEZA EL FORMULARIO-->
-        <section class="seccion--padding">
-            <h2>Dejanos tus datos y nosotros te llamamos</h2>
-            <form action="envio.php" method="POST" class="row g-3">
-                <div class="col-md-6">
-                    <label for="nombre">Tu nombre:</label><br>
-                    <input type="text" id="nombre" class="form-control" name="nombre" value="Nombre"><br>
-                </div>
-                <div class="col-md-6">
-                    <label for="apellido">Apellido:</label><br>
-                    <input type="text" id="apellido" class="form-control" name="apellido" value="Apellido"><br>
-                </div>
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <section class="seccion--padding">
+                    <h2 id="dejanostusdatos">Dejanos tus datos, y nosotros te llamamos</h2>
+                    <form action="envio.php" method="POST" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre">Tu nombre:</label><br>
+                            <input type="text" id="nombre" class="form-control" name="nombre" value="Nombre"><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido">Apellido:</label><br>
+                            <input type="text" id="apellido" class="form-control" name="apellido" value="Apellido"><br>
+                        </div>
+                        <div>
+                            <label for="celular">Celular:</label><br>
+                            <input type="text" id="celular" class="form-control" name="celular" value="351..."><br>
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label><br>
+                            <input type="text" id="email" class="form-control" name="email" value="nombre@gmail.com"><br>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="horario">Horario de contacto:</label><br>
+                            <select name="rangohorario" class="form-select" id="horario">
+                                <option value="manana">Mañana</option>
+                                <option value="siesta">Siesta</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noche">Noche</option>
+                            </select><br>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="consentimiento"> Acepto que me llamen por teléfono</label>
+                            <input type="checkbox" id="consentimiento" class="form-check-input" name="consentimiento" value="Si"><br>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="submit" value="Enviar" class="submitform btn btn-primary contacto-form-button contacto-form-button-color">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="reset" value="Borrar datos" class="submitform btn btn-outline-secondary contacto-form-button">
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-12 col-md-5 seccion--padding contacto-datos-bgcolor">
+                <h2 id="contactateconnosotros">O contactate con nosotros</h2>
                 <div>
-                    <label for="celular">Celular:</label><br>
-                    <input type="text" id="celular" class="form-control" name="celular" value="351..."><br>
+                    <div class="row contacto-datos-alineacion contacto-datos-personales-padding">
+                        <div class="col-8 contacto-datos-personales-individuo-vertical-alignment">
+                            <ul>
+                                <li><strong>Juan</strong></li>
+                                <li><strong>Tel.</strong> 3515987654</li>
+                                <li><strong>E-mail:</strong> juanmacar@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/macarlupu.jpg" alt="foto_macarlupu" class="fotos-contacto">
+                        </div>
+                    </div>
+                    <div class="row contacto-datos-personales-padding">
+                        <div class="col-4">
+                            <img src="images/garbero.jpg" alt="foto_garbero" class="fotos-contacto">
+                        </div>
+                        <div class="col-8 contacto-datos-personales-individuo-vertical-alignment">
+                            <ul>
+                                <li><strong>Cristian</strong></li>
+                                <li><strong>Tel.</strong>: 3515123456</li>
+                                <li><strong>E-mail:</strong> cristiangar@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="email">E-mail:</label><br>
-                    <input type="text" id="email" class="form-control" name="email" value="nombre@gmail.com"><br>
-                </div>
-                <div class="col-md-4">
-                    <label for="horario">Horario de contacto:</label><br>
-                    <select name="rangohorario" class="form-select" id="horario">
-                        <option value="manana">Mañana</option>
-                        <option value="siesta">Siesta</option>
-                        <option value="tarde">Tarde</option>
-                        <option value="noche">Noche</option>
-                    </select><br>
-                </div>
-                <div class="col-md-12">
-                    <label for="consentimiento"> Acepto que me llamen por teléfono</label>
-                    <input type="checkbox" id="consentimiento" class="form-check-input" name="consentimiento" value="Si"><br>
-                </div>
-                <div class="col-md-6">
-                    <input type="submit" value="Enviar" class="submitform btn btn-primary contacto-form-button contacto-form-button-color">
-                </div>
-                <div class="col-md-6">
-                    <input type="reset" value="Borrar datos" class="submitform btn btn-outline-secondary contacto-form-button">
-                </div>
-            </form>
-        </section>
+
+            </div>
+        </div>
         <!-- FIN DEL FORMULARIO-->
     <!-- EMPIEZA EL FOOTER-->
 <footer class="seccion--padding div_text--center">

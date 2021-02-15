@@ -22,7 +22,7 @@ $neutrooscuro: #3F403F;
 @import "ubicacion";
 @import "timeline";
 @import "animaciones_ubicacion";
-@import "contact_form";
+@import "contacto";
 @import "home";
 @import "titulares_secciones";
 @import "footer";
@@ -41,4 +41,7 @@ $neutrooscuro: #3F403F;
 /* Centrar el texto de un div*/
 .div_text--center {
     text-align: center;
+}
+.column-padding {
+    padding: 15px;
 }

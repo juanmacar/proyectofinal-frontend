@@ -30,7 +30,7 @@
     </nav>
     <!-- FIN DE LA BARRA DE NAVEGACIÓN-->
     <!-- COMIENZA EL CARRUSEL DE FOTOS-->
-<section class="content_afternavbar--position">
+<section>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -78,12 +78,25 @@
 <!-- EMPIEZA LA DESCRIPCIÓN-->
 <section class="seccion--padding">
     <div class="div_text--center content_title--padding"><h3>DESCRIPCIÓN DEL PROYECTO</h3></div>
-    <div class="row">
-        <div class="col-12 col-md-6 col-xl-4">En Duplex docta, nos dedicamos a la <strong>construcción de casas y duplex</strong>. El <strong>duplex en Docta Urbanización Inteligente</strong> que proponemos cuenta con 100 m2 cubiertos, que incluyen cocina comedor, living, 3 dormitorios y tres baños, y más de 50 m2 de patio (con <strong>asador y pileta</strong>).</div>
-        <div class="col-12 col-md-6 col-xl-4">Se trata de un casa con 2 <strong>dormitorios con baño en suite</strong>, y con todas las comodidades de un hotel cinco estrellas (como tu propio vestidor). Además, tienen excelente iluminación y ventilación y preinstalción de televisión e internet</div>
-        <div class="col-12 col-md-6 col-xl-4">Todo el duplex está construido con materiales de primera calidad, y terminaciones elegantes y de moda. Los espacios son amplios y luminosos y hasta el último centimetro está bien aprovechado. ¡Parece mucho más grande! Vení a conocer nuestra propuesta de <strong>casas y duplex en Córdoba</strong>.</div>
-    </div>
-    <div class="div_text--center"><button class="general--botones">VER MÁS</button></div>
+    <!-- SE DIVIDE EN CONTENIDO EN VERSION PARA DESKTOP Y MOBILE, A FIN DE EVITAR QUE EN TABLETA, CUANDO SE APLICA LA CLASE MD-6 QUEDEN DOS DIVS EN UNA LINEA Y UNO SOLO ABAJO. SE CREAN 3 DIVS CON EL TEXTO EN DESKTOP, Y DOS DIVS CON EL TEXTO PARA MOBILE-->
+    <!--SECCION PARA DESKTOP 3 DIVS-->
+      <div class="row home-description-desktop-visibility">
+          <div class="col-xl-4 column-padding">En Duplex docta, nos dedicamos a la <strong>construcción de casas y duplex</strong>. El <strong>duplex en Docta Urbanización Inteligente</strong> que proponemos cuenta con 100 m2 cubiertos, que incluyen cocina comedor, living, 3 dormitorios y tres baños, y más de 50 m2 de patio (con <strong>asador y pileta</strong>).</div>
+          <div class="col-xl-4 column-padding">Se trata de un casa con 2 <strong>dormitorios con baño en suite</strong>, y con todas las comodidades de un hotel cinco estrellas (como tu propio vestidor). Además, tienen excelente iluminación y ventilación y preinstalción de televisión e internet</div>
+          <div class="col-xl-4 column-padding">Todo el duplex está construido con materiales de primera calidad, y terminaciones elegantes y de moda. Los espacios son amplios y luminosos y hasta el último centimetro está bien aprovechado. ¡Parece mucho más grande! Vení a conocer nuestra propuesta de <strong>casas y duplex en Córdoba</strong>.</div>
+      </div>
+    <!--SECCION PARA DESKTOP-->
+     <!--SECCION PARA MOBILE DOS DIVS-->
+     <div class="row home-description-mobile-visibility">
+      <div class="col-12 col-md-6 column-padding">En Duplex docta, nos dedicamos a la <strong>construcción de casas y duplex</strong>. El <strong>duplex en Docta Urbanización Inteligente</strong> que proponemos cuenta con 100 m2 cubiertos, que incluyen cocina comedor, living, 3 dormitorios y tres baños, y más de 50 m2 de patio (con <strong>asador y pileta</strong>).Se trata de un casa con 2 <strong>dormitorios con baño en suite</strong>, y con todas las comodidades de un hotel cinco estrellas (como tu propio vestidor).
+      </div>
+      <div class="col-12 col-md-6 column-padding">Además, tienen excelente iluminación y ventilación y preinstalción de televisión e internet. Todo el duplex está construido con materiales de primera calidad, y terminaciones elegantes y de moda. Los espacios son amplios y luminosos y hasta el último centimetro está bien aprovechado. ¡Parece mucho más grande! Vení a conocer nuestra propuesta de <strong>casas y duplex en Córdoba</strong>.
+      </div>
+  </div>
+<!--SECCION PARA MOBILE-->
+    <div class="div_text--center"><form action="contacto.html">
+      <button class="general--botones">QUIERO MÁS INFORMACIÓN</button>
+    </form></div>
 </section>
 <!-- FIN DE LA DESCRIPCIÓN-->
 <!-- EMPIEZA EL FOOTER-->

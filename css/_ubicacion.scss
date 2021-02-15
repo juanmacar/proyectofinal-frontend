@@ -1,8 +1,7 @@
 /*Estilo del iframe de Google*/
 .content_iframegoogle--decoration {
-    border: 2px solid $secundario;
-    width: 100%;
     min-height: 100%;
+    width: 100%;
 }
 /*Altura de la primera sección, que tiene el mapa y el título*/
 .content_firstblock--height {
@@ -21,5 +20,8 @@
     background-color: $secundario;
     border-radius: 5px;
     padding: 15px;
-    margin: 10px 10px 5px 15px;
+    margin: 10px;
+}
+.row {
+    --bs-gutter-x: 0; /*reparo problema de barra blanca al costado del sitio causado por BS*/
 }

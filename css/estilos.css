@@ -43,7 +43,6 @@ Espero que te guste el sitio.
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   font-weight: 700;
-  background-color: white;
 }
 
 /*imagenes de fondo del carrusel*/
@@ -89,9 +88,8 @@ Espero que te guste el sitio.
 
 /*Estilo del iframe de Google*/
 .content_iframegoogle--decoration {
-  border: 2px solid #F5BC32;
-  width: 100%;
   min-height: 100%;
+  width: 100%;
 }
 
 /*Altura de la primera sección, que tiene el mapa y el título*/
@@ -113,7 +111,12 @@ Espero que te guste el sitio.
   background-color: #F5BC32;
   border-radius: 5px;
   padding: 15px;
-  margin: 10px 10px 5px 15px;
+  margin: 10px;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  /*reparo problema de barra blanca al costado del sitio causado por BS*/
 }
 
 .timeline {
@@ -272,31 +275,42 @@ Espero que te guste el sitio.
   border: none;
 }
 
-/*posicion del carrusel del home al inicio de la página en desktop*/
-.content_afternavbar--position {
-  position: relative;
-  top: -80px;
-  /*esto permite que la imagen quede de fondo de la barra de navegación*/
+.fotos-contacto {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
 }
 
-/*posicion del carrusel del home al inicio de la página cuando se usa menu hamburguesa*/
-@media only screen and (max-width: 991px) {
-  .content_afternavbar--position {
-    position: relative;
-    top: -216px;
-    /*esto permite que la imagen quede de fondo de la barra de navegación*/
-  }
-  .image1, .image2, .image3, .image4 {
-    height: 118vh;
-    /*esto es mas de 100 para compensar la posicion negativa de la imagen y que siga ocupando todo el viewport*/
-  }
+.contacto-datos-bgcolor {
+  background-color: #F5BC32;
+}
+
+.contacto-datos-personales-padding {
+  padding-top: 40px;
+}
+
+.contacto-datos-personales-individuo-vertical-alignment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactateconnosotros {
+  color: white;
+}
+
+#dejanostusdatos {
+  color: #F5BC32;
 }
 
 /*Estilo de botón del home*/
 .general--botones {
   padding: 10px;
   background-color: #EEDE03;
-  color: white;
+  color: #3F403F;
   border: none;
   border-radius: 5px;
   -webkit-transition: background-color 500ms;
@@ -305,7 +319,21 @@ Espero que te guste el sitio.
 
 .general--botones:hover {
   background-color: #bbae00;
+  color: white;
   border: none;
+}
+
+/*el siguiente bloque evita que a veces las 3 columnas queden dos arriba y una abajo cambiando el contenido que se muestra en dispositivos mobiles*/
+@media only screen and (max-width: 1199px) {
+  .home-description-desktop-visibility {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-description-mobile-visibility {
+    display: none;
+  }
 }
 
 /*Asignación de imagen de fondo al titular*/
@@ -333,7 +361,7 @@ Espero que te guste el sitio.
 }
 
 .secciones-header-shadow {
-  text-shadow: 1px 1px #3F403F, 4px 4px 3px #3F403F;
+  text-shadow: 1px 1px 2px #3F403F, 4px 4px 3px #3F403F;
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
@@ -358,5 +386,9 @@ footer {
 /* Centrar el texto de un div*/
 .div_text--center {
   text-align: center;
+}
+
+.column-padding {
+  padding: 15px;
 }
 /*# sourceMappingURL=estilos.css.map */
