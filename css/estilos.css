@@ -416,7 +416,6 @@ Espero que te guste el sitio.
 .secciones-header-titular {
   background-color: #333333;
   /* Color si no se ve la imagen */
-  -webkit-text-stroke: 0.5px black;
   color: #F5BC32;
   font-weight: bold;
   z-index: 2;
@@ -429,7 +428,7 @@ Espero que te guste el sitio.
 }
 
 .secciones-header-shadow {
-  text-shadow: 4px 4px 3px #3F403F;
+  text-shadow: 3px 3px 5px #3F403F, -1px -1px 5px black;
 }
 
 /*estilo del footer*/
