@@ -8,7 +8,8 @@
 }
 /* Estilos del texto de los titulares */
 .secciones-header-titular {
-    background-color: rgb(0,0,0); /* Color si no se ve la imagen */
+    background-color: #333333; /* Color si no se ve la imagen */
+    -webkit-text-stroke: 0.5px black;
     color: $secundario;
     font-weight: bold;
     z-index: 2;
@@ -19,6 +20,5 @@
     }
 }
 .secciones-header-shadow {
-    text-shadow: 1px 1px 2px $neutrooscuro, 4px 4px 3px $neutrooscuro;
-    filter: blur(0px);
+    text-shadow: 4px 4px 3px $neutrooscuro;
 }

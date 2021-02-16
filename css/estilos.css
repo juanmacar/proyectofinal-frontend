@@ -23,7 +23,7 @@ Espero que te guste el sitio.
   position: sticky;
   top: 0;
   z-index: 10;
-  min-height: 80px;
+  min-height: 8vh;
 }
 
 /*Estilo de la barra de navegación*/
@@ -49,7 +49,7 @@ Espero que te guste el sitio.
 .image1 {
   background-image: url("../images/cocina.jpg");
   background-color: #cccccc;
-  height: 100vh;
+  height: 92vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +59,7 @@ Espero que te guste el sitio.
 .image2 {
   background-image: url("../images/dormitorio.jpg");
   background-color: #cccccc;
-  height: 100vh;
+  height: 92vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +69,7 @@ Espero que te guste el sitio.
 .image3 {
   background-image: url("../images/front.jpg");
   background-color: #cccccc;
-  height: 100vh;
+  height: 92vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +79,7 @@ Espero que te guste el sitio.
 .image4 {
   background-image: url("../images/living.jpg");
   background-color: #cccccc;
-  height: 100vh;
+  height: 92vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,6 +315,20 @@ Espero que te guste el sitio.
   border: none;
 }
 
+.contacto-form-button-color-vaciar {
+  background-color: #CED0CE;
+  color: #3F403F;
+  border: none;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+.contacto-form-button-color-vaciar:hover {
+  background-color: #3F403F;
+  color: #CED0CE;
+  border: none;
+}
+
 .fotos-contacto {
   border-radius: 50%;
   width: 100%;
@@ -376,6 +390,19 @@ Espero que te guste el sitio.
   }
 }
 
+/*Estilos de los textos dentro del carrusel que funciona como hero de la página principal*/
+.home-slider-titulos-estilo {
+  font-size: 3em;
+  color: #F5BC32;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 4px 4px 5px #3F403F;
+}
+
+.home-slider-textos-estilo {
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #3F403F, 4px 4px 3px #3F403F;
+}
+
 /*Asignación de imagen de fondo al titular*/
 .secciones-header-titular {
   background-image: url("../images/fondo_cabecera.jpg");
@@ -387,8 +414,9 @@ Espero que te guste el sitio.
 
 /* Estilos del texto de los titulares */
 .secciones-header-titular {
-  background-color: black;
+  background-color: #333333;
   /* Color si no se ve la imagen */
+  -webkit-text-stroke: 0.5px black;
   color: #F5BC32;
   font-weight: bold;
   z-index: 2;
@@ -401,9 +429,7 @@ Espero que te guste el sitio.
 }
 
 .secciones-header-shadow {
-  text-shadow: 1px 1px 2px #3F403F, 4px 4px 3px #3F403F;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+  text-shadow: 4px 4px 3px #3F403F;
 }
 
 /*estilo del footer*/
@@ -430,5 +456,11 @@ footer {
 
 .column-padding {
   padding: 15px;
+}
+
+/*Enlaces comunes en parrafos*/
+.content-links {
+  color: #F5BC32;
+  font-weight: 700;
 }
 /*# sourceMappingURL=estilos.css.map */

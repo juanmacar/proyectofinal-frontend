@@ -12,6 +12,19 @@
     border: none;
     }
 }
+
+.contacto-form-button-color-vaciar {
+    background-color: $neutroclaro;
+    color: $neutrooscuro;
+    border: none;
+    transition: background-color 500ms;
+    &:hover {
+        background-color: $neutrooscuro;
+        color: $neutroclaro;
+    border: none;
+    }
+}
+
 .fotos-contacto {
     border-radius: 50%;
     width: 100%;
